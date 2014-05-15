@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Tokenizer_Authenticator>
+            <active>true</active>
+            <codePool>community</codePool>
+            <depends></depends>
+        </Tokenizer_Authenticator>
+    </modules>
+</config>

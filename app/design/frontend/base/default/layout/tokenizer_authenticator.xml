@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<layout>
+    <customer_account_login>
+        <reference name="head">
+            <action method="addItem">
+                <type>skin_css</type>
+                <name>tokenizer_authenticator/css/styles.css</name>
+            </action>
+        </reference>
+        <reference name="content">
+            <block type="tokenizer_authenticator/login" name="tokenizer_authenticator_login">
+                <block type="tokenizer_authenticator/google_button" name="tokenizer_authenticator_google_login_button" />
+                <block type="tokenizer_authenticator/facebook_button" name="tokenizer_authenticator_facebook_login_button" />
+                <block type="tokenizer_authenticator/twitter_button" name="tokenizer_authenticator_twitter_login_button" />
+            </block>
+        </reference>
+    </customer_account_login>
+</layout>

@@ -1,0 +1,52 @@
+<config>
+    <sections>
+        <general>
+            <groups>
+                <authenticator translate="label">
+                    <label>Tokenizer Authenticator</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>50</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <tokenizer_app_id translate="label">
+                          <label>Tokenizer app id</label>
+                          <frontend_type>text</frontend_type>
+                          <sort_order>50</sort_order>
+                          <show_in_default>1</show_in_default>
+                          <show_in_website>1</show_in_website>
+                          <show_in_store>1</show_in_store>
+                        </tokenizer_app_id>
+                        <tokenizer_key translate="label">
+                          <label>Tokenizer key</label>
+                          <frontend_type>text</frontend_type>
+                          <sort_order>50</sort_order>
+                          <show_in_default>1</show_in_default>
+                          <show_in_website>1</show_in_website>
+                          <show_in_store>1</show_in_store>
+                        </tokenizer_key>
+                        <tokenizer_admin translate="label">
+                          <label>Enabled admin two factor-auth</label>
+                          <frontend_type>select</frontend_type>
+                          <sort_order>50</sort_order>
+                          <source_model>tokenizer_authenticator/system_config_source_dropdown_values</source_model>
+                          <show_in_default>1</show_in_default>
+                          <show_in_website>1</show_in_website>
+                          <show_in_store>1</show_in_store>
+                        </tokenizer_admin>
+                        <tokenizer_customer translate="label">
+                          <label>Enabled tokenizer login for customer</label>
+                          <frontend_type>select</frontend_type>
+                          <sort_order>50</sort_order>
+                          <source_model>tokenizer_authenticator/system_config_source_dropdown_values</source_model>
+                          <show_in_default>1</show_in_default>
+                          <show_in_website>1</show_in_website>
+                          <show_in_store>1</show_in_store>
+                        </tokenizer_customer>
+                    </fields>
+                </authenticator>
+            </groups>
+        </general>
+    </sections>
+</config>

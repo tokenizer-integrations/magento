@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Tokenizer_Authenticator>
+            <version>1.0.0</version>
+        </Tokenizer_Authenticator>
+    </modules>
+    <frontend>      
+      <layout>
+          <updates>
+              <tokenizer_authenticator>
+                  <file>tokenizer_authenticator.xml</file>
+              </tokenizer_authenticator>
+          </updates>
+      </layout>
+    </frontend> 
+    <global>
+      <helpers>
+          <tokenizer_authenticator>
+              <class>Tokenizer_Authenticator_Helper</class>
+          </tokenizer_authenticator>
+      </helpers>
+      <models>
+          <tokenizer_authenticator>
+              <class>Tokenizer_Authenticator_Model</class>
+          </tokenizer_authenticator>
+      </models>
+      <blocks>
+            <tokenizer_authenticator>
+                <class>Tokenizer_Authenticator_Block</class>
+            </tokenizer_authenticator>            
+        </blocks>
+    </global>
+    <admin>
+        <routers>
+            <adminhtml>
+                <args>
+                    <modules>
+                        <Tokenizer_Authenticator before="Mage_Adminhtml">Tokenizer_Authenticator</Tokenizer_Authenticator>
+                    </modules>
+                </args>
+            </adminhtml>
+        </routers>
+    </admin>
+    <frontend>
+        <routers>
+            <customer>
+                <args>
+                    <modules>
+                        <Tokenizer_Authenticator before="Mage_Customer">Tokenizer_Authenticator</Tokenizer_Authenticator>
+                    </modules>
+                </args>
+            </customer>
+        </routers>
+    </frontend>    
+</config>
